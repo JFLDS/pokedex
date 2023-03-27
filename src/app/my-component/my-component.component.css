@@ -1,0 +1,132 @@
+.SearchBar {
+  text-align: center;
+}
+
+.Bar {
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.cell {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  background-color: #f3f3f3;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cell:active {
+  transform: scale(1.1);
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-info img {
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.pokemon-info h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pokemon-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: gray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.ShowMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.btn_showMore {
+  background-color: #30a7d7;
+  border: 2px solid lightskyblue;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_showMore:active {
+  background-color: lightskyblue;
+  border: 2px solid #30a7d7;
+}
+
+
+
+
+

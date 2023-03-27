@@ -1,0 +1,23 @@
+<div class="grid-container">
+  <div class="grid-item item-1">
+    <img class="zoom" [src]="info.sprites.front_default" alt="{{info.name}}" />
+  </div>
+  <div class="grid-item item-2">
+    <h3>Stats:</h3>
+    <ul class="no-bullets">
+      <li *ngFor="let stat of info.stats">{{stat.stat.name}}: {{stat.base_stat}}</li>
+    </ul>
+  </div>
+  <div class="grid-item item-3">
+    <h3>Type:</h3>
+    <ul class="no-bullets">
+      <li *ngFor="let type of info.types">{{type.type.name}}</li>
+    </ul>
+  </div>
+  <div class="grid-item item-4">
+    <h3>Abilities:</h3>
+    <ul class="no-bullets">
+      <li *ngFor="let ability of info.abilities">{{ability.ability.name}}</li>
+    </ul>
+  </div>
+</div>

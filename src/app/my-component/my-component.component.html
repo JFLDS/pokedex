@@ -1,0 +1,68 @@
+<!-- Question 1
+Rentrer l'ID : <input [(ngModel)]="id">
+<br>
+
+// Question 2
+Mon id est : {{id}}
+<br>
+
+//Question 3
+Mon ID est :
+<input readonly [(ngModel)]="id">
+<br> <br> -->
+
+<!-- Question 8 -->
+<div class="SearchBar">
+  <input class="Bar" [(ngModel)]="searchPokemon" placeholder="Search name or ID..">
+  <br><br>
+</div>
+
+
+
+<div class="container">
+  <button class="cell" *ngFor="let pokemon of displayedPokemons  | filterPokemonPipe: 'name': searchPokemon " (click)="showDetails(pokemon)">
+    <div class="pokemon-info">
+      <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+ pokemon.getId() + '.png'"
+           alt="{{pokemon.getName()}}"/>
+      <h2>{{pokemon.getName()}}</h2>
+      <p>N°{{pokemon.getId()}}</p>
+    </div>
+  </button>
+</div>
+<div class="ShowMore">
+  <button class="btn_showMore" (click)="showMore()">Show More</button>
+</div>
+
+
+
+<div class="overlay" *ngIf="selectedPokemon">
+  <button class="close-btn" (click)="hideDetails()">X</button>
+  <div class="modal">
+    <h2>Details of {{selectedPokemon.getName()}}</h2>
+    <div>
+      <!-- Question 13 -->
+      <div *ngIf="pokeInfo"> <app-poke-info [info]="pokeInfo"></app-poke-info> </div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 6
+<select [(ngModel)]="idPokemonSelect">
+  <option  *ngFor="let pokemon of pokemons | filterPokemonPipe: 'name': searchPokemon " [value]="pokemon.getId()"> {{pokemon.getName()}} </option>
+  console.log(pokemons);
+</select>
+
+<button (click)="go()"> GO </button>
+
+Question 7
+ID Pokemon selectionné : {{idPokemonSelect}}
+<br><br>
+
+Question 13
+<div *ngIf="pokeInfo">
+
+  <app-poke-info [info]="pokeInfo"></app-poke-info>
+
+</div> -->
+
+
