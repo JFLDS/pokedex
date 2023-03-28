@@ -11,7 +11,7 @@ Exécutez 'ng serve' sur un terminal de commande pour lancer le serveur. Aller s
 - Recherche d'un Pokemon par son nom ou son ID.
 - Liste triée par ordre croissant des ID des Pokémons.
 - Affichage sous forme de grid (32 Pokemons d'affichés).
-- Bouton "Show More" pour afficher 32 Pokemons supplémentaire.
+- Bouton "Show More" pour afficher 32 Pokemons supplémentaires.
 - Chaque case est cliquable et affiche la fiche détail du pokemon (type, stats et abilitées).  
 
 ## Developpement
